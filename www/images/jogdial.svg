@@ -1,6 +1,6 @@
 
 
-<svg width="310" height="260" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg width="430" height="260" xmlns="http://www.w3.org/2000/svg" version="1.1">
 <script type="text/ecmascript">
     function Onhover(evt, elementId) {
       id(elementId).style.opacity="1";
@@ -107,6 +107,7 @@ fill:orange;
 </g>
 <g id="Decoration" pointer-events="none" font-weight="900" font-size="11" fill-opacity=".6"><path class="std" d="M120,20 l17,17 h-10 v11 h-14 v-11 h-10 z" fill="SteelBlue"></path><path class="std" d="M120,220 l17,-17 h-10 v-11 h-14 v11 h-10 z" fill="SteelBlue"></path><path class="std" d="M20,120 l17,17 v-10 h11 v-14 h-11 v-10 z" fill="Khaki"></path><path class="std" d="M220,120 l-17,-17 v10 h-11 v14 h11 v10 z" fill="Khaki"></path><text x="113" y="37" > +Y </text><text x="113" y="212"> -Y </text><text x="27" y="124"> -X </text><text x="196" y="124"> +X </text></g></g>
 
+<!--  Z Jog  -->
 <g id="JogBar" transform="translate(250,0)"><desc>JogBar - Z jogging bar</desc>
 <g id="+Z" fill="#b0b0b0" style="pointer-events:none;"><path class="std" d=" M5,0 h30 a5,5 0 0,1 5,5 v27 h-40 v-27 a5,5 0 0,1 5,-5 z"></path><path class="std" d="M20,2 l17,17 h-10 v11 h-14 v-11 h-10 z" fill="DarkSeaGreen"></path><text stroke="black" x="11" y="18" font-size="12" id="axisup"> +Z </text></g>
 <g id="-Z" fill="#b0b0b0" style="pointer-events:none;"><path class="std" d=" M0,208 h40 v27 a5,5 0 0,1 -5,5 h-30 a5,5 0 0,1 -5,-5 z"></path><path class="std" d="M20,238 l-17,-17 h10 v-11 h14 v11 h10 z" fill="DarkSeaGreen"></path><text stroke="black" x="13" y="230" font-size="12" id="axisdown"> -Z </text></g>
@@ -133,6 +134,92 @@ fill:orange;
 <g id="Z-0_1" fill="#f0f0f0" onmouseup="SendJogcommand('Z-0.1','Zfeedrate')" onmouseover="Onhover(evt, 'z01')" onmouseout="Onout(evt, 'z01')"><rect class="std" x="0" y="128" width="40" height="24"></rect></g>
 <g id="ZSpace" fill="#000000" style="pointer-events:none;"><rect class="std" x="0" y="112" width="40" height="16"></rect></g>
 </g>
+
+<!--  A Jog  -->
+<g id="JogBar" transform="translate(295,0)"><desc>JogBar - A jogging bar</desc>
+<g id="+A" fill="#b0b0b0" style="pointer-events:none;"><path class="std" d=" M5,0 h30 a5,5 0 0,1 5,5 v27 h-40 v-27 a5,5 0 0,1 5,-5 z"></path><path class="std" d="M20,2 l17,17 h-10 v11 h-14 v-11 h-10 z" fill="DarkSeaGreen"></path><text stroke="black" x="11" y="18" font-size="12" id="axisup"> +A </text></g>
+<g id="-A" fill="#b0b0b0" style="pointer-events:none;"><path class="std" d=" M0,208 h40 v27 a5,5 0 0,1 -5,5 h-30 a5,5 0 0,1 -5,-5 z"></path><path class="std" d="M20,238 l-17,-17 h10 v-11 h14 v11 h10 z" fill="DarkSeaGreen"></path><text stroke="black" x="13" y="230" font-size="12" id="axisdown"> -A </text></g>
+<g id="A+10" fill="#d0d0d0" onmouseup="SendJogcommand('A10','Afeedrate')" onmouseover="Onhover(evt, 'a10')" onmouseout="Onout(evt, 'a10')"><rect class="std" x="0" y="32" width="40" height="30"></rect>
+    <g id="a10" style="opacity:0.2">
+        <circle class="scl" cx="20" cy="47" r="13"></circle>
+        <text class="scl" x="9" y="53" font-size="18"> 10 </text>
+    </g>
+</g>
+<g id="A+1" fill="#e0e0e0" onmouseup="SendJogcommand('A1','Afeedrate')" onmouseover="Onhover(evt, 'a1')" onmouseout="Onout(evt, 'a1')"><rect class="std" x="0" y="62" width="40" height="26"></rect>
+    <g id="a1" style="opacity:0.2">
+        <circle class="scl" cx="20" cy="75" r="11"></circle>
+        <text class="scl" x="15" y="81.5" font-size="18"> 1 </text>
+    </g>
+</g>
+<g id="A+0.1" fill="#f0f0f0" onmouseup="SendJogcommand('A0.1','Afeedrate')" onmouseover="Onhover(evt, 'a01')" onmouseout="Onout(evt, 'a01')"><rect class="std" x="0" y="88" width="40" height="24"></rect>
+     <g id="a01" style="opacity:0.2">
+        <circle class="scl" cx="20" cy="100" r="9.5"></circle>
+        <text class="scl" x="13" y="103.5" font-size="10"> 0.1 </text>
+    </g>
+</G>
+<g id="A-10" fill="#d0d0d0" onmouseup="SendJogcommand('A-10','Afeedrate')" onmouseover="Onhover(evt, 'a10')" onmouseout="Onout(evt, 'a10')"><rect class="std r10" x="0" y="178" width="40" height="30"></rect></g>
+<g id="A-1" fill="#e0e0e0" onmouseup="SendJogcommand('A-1','Afeedrate')" onmouseover="Onhover(evt, 'a1')" onmouseout="Onout(evt, 'a1')"><rect class="std" x="0" y="152" width="40" height="26"></rect></g>
+<g id="A-0_1" fill="#f0f0f0" onmouseup="SendJogcommand('A-0.1','Afeedrate')" onmouseover="Onhover(evt, 'a01')" onmouseout="Onout(evt, 'a01')"><rect class="std" x="0" y="128" width="40" height="24"></rect></g>
+<g id="ASpace" fill="#000000" style="pointer-events:none;"><rect class="std" x="0" y="112" width="40" height="16"></rect></g>
+</g>
+
+<!--  B Jog  -->
+<g id="JogBar" transform="translate(340,0)"><desc>JogBar - B jogging bar</desc>
+<g id="+B" fill="#b0b0b0" style="pointer-events:none;"><path class="std" d=" M5,0 h30 a5,5 0 0,1 5,5 v27 h-40 v-27 a5,5 0 0,1 5,-5 z"></path><path class="std" d="M20,2 l17,17 h-10 v11 h-14 v-11 h-10 z" fill="DarkSeaGreen"></path><text stroke="black" x="11" y="18" font-size="12" id="axisup"> +B </text></g>
+<g id="-B" fill="#b0b0b0" style="pointer-events:none;"><path class="std" d=" M0,208 h40 v27 a5,5 0 0,1 -5,5 h-30 a5,5 0 0,1 -5,-5 z"></path><path class="std" d="M20,238 l-17,-17 h10 v-11 h14 v11 h10 z" fill="DarkSeaGreen"></path><text stroke="black" x="13" y="230" font-size="12" id="axisdown"> -B </text></g>
+<g id="B+10" fill="#d0d0d0" onmouseup="SendJogcommand('B10','Bfeedrate')" onmouseover="Onhover(evt, 'b10')" onmouseout="Onout(evt, 'b10')"><rect class="std" x="0" y="32" width="40" height="30"></rect>
+    <g id="b10" style="opacity:0.2">
+        <circle class="scl" cx="20" cy="47" r="13"></circle>
+        <text class="scl" x="9" y="53" font-size="18"> 10 </text>
+    </g>
+</g>
+<g id="B+1" fill="#e0e0e0" onmouseup="SendJogcommand('B1','Bfeedrate')" onmouseover="Onhover(evt, 'b1')" onmouseout="Onout(evt, 'b1')"><rect class="std" x="0" y="62" width="40" height="26"></rect>
+    <g id="b1" style="opacity:0.2">
+        <circle class="scl" cx="20" cy="75" r="11"></circle>
+        <text class="scl" x="15" y="81.5" font-size="18"> 1 </text>
+    </g>
+</g>
+<g id="B+0.1" fill="#f0f0f0" onmouseup="SendJogcommand('B0.1','Bfeedrate')" onmouseover="Onhover(evt, 'b01')" onmouseout="Onout(evt, 'b01')"><rect class="std" x="0" y="88" width="40" height="24"></rect>
+     <g id="b01" style="opacity:0.2">
+        <circle class="scl" cx="20" cy="100" r="9.5"></circle>
+        <text class="scl" x="13" y="103.5" font-size="10"> 0.1 </text>
+    </g>
+</G>
+<g id="B-10" fill="#d0d0d0" onmouseup="SendJogcommand('B-10','Bfeedrate')" onmouseover="Onhover(evt, 'b10')" onmouseout="Onout(evt, 'b10')"><rect class="std r10" x="0" y="178" width="40" height="30"></rect></g>
+<g id="B-1" fill="#e0e0e0" onmouseup="SendJogcommand('B-1','Bfeedrate')" onmouseover="Onhover(evt, 'b1')" onmouseout="Onout(evt, 'b1')"><rect class="std" x="0" y="152" width="40" height="26"></rect></g>
+<g id="B-0_1" fill="#f0f0f0" onmouseup="SendJogcommand('B-0.1','Bfeedrate')" onmouseover="Onhover(evt, 'b01')" onmouseout="Onout(evt, 'b01')"><rect class="std" x="0" y="128" width="40" height="24"></rect></g>
+<g id="BSpace" fill="#000000" style="pointer-events:none;"><rect class="std" x="0" y="112" width="40" height="16"></rect></g>
+</g>
+
+
+<!--  C Jog  -->
+<g id="JogBar" transform="translate(385,0)"><desc>JogBar - C jogging bar</desc>
+<g id="+C" fill="#b0b0b0" style="pointer-events:none;"><path class="std" d=" M5,0 h30 a5,5 0 0,1 5,5 v27 h-40 v-27 a5,5 0 0,1 5,-5 z"></path><path class="std" d="M20,2 l17,17 h-10 v11 h-14 v-11 h-10 z" fill="DarkSeaGreen"></path><text stroke="black" x="11" y="18" font-size="12" id="axisup"> +C </text></g>
+<g id="-C" fill="#b0b0b0" style="pointer-events:none;"><path class="std" d=" M0,208 h40 v27 a5,5 0 0,1 -5,5 h-30 a5,5 0 0,1 -5,-5 z"></path><path class="std" d="M20,238 l-17,-17 h10 v-11 h14 v11 h10 z" fill="DarkSeaGreen"></path><text stroke="black" x="13" y="230" font-size="12" id="axisdown"> -C </text></g>
+<g id="C+10" fill="#d0d0d0" onmouseup="SendJogcommand('C10','Cfeedrate')" onmouseover="Onhover(evt, 'c10')" onmouseout="Onout(evt, 'c10')"><rect class="std" x="0" y="32" width="40" height="30"></rect>
+    <g id="c10" style="opacity:0.2">
+        <circle class="scl" cx="20" cy="47" r="13"></circle>
+        <text class="scl" x="9" y="53" font-size="18"> 10 </text>
+    </g>
+</g>
+<g id="C+1" fill="#e0e0e0" onmouseup="SendJogcommand('C1','Cfeedrate')" onmouseover="Onhover(evt, 'c1')" onmouseout="Onout(evt, 'c1')"><rect class="std" x="0" y="62" width="40" height="26"></rect>
+    <g id="c1" style="opacity:0.2">
+        <circle class="scl" cx="20" cy="75" r="11"></circle>
+        <text class="scl" x="15" y="81.5" font-size="18"> 1 </text>
+    </g>
+</g>
+<g id="C+0.1" fill="#f0f0f0" onmouseup="SendJogcommand('C0.1','Cfeedrate')" onmouseover="Onhover(evt, 'c01')" onmouseout="Onout(evt, 'c01')"><rect class="std" x="0" y="88" width="40" height="24"></rect>
+     <g id="c01" style="opacity:0.2">
+        <circle class="scl" cx="20" cy="100" r="9.5"></circle>
+        <text class="scl" x="13" y="103.5" font-size="10"> 0.1 </text>
+    </g>
+</G>
+<g id="C-10" fill="#d0d0d0" onmouseup="SendJogcommand('C-10','Cfeedrate')" onmouseover="Onhover(evt, 'c10')" onmouseout="Onout(evt, 'c10')"><rect class="std r10" x="0" y="178" width="40" height="30"></rect></g>
+<g id="C-1" fill="#e0e0e0" onmouseup="SendJogcommand('C-1','Cfeedrate')" onmouseover="Onhover(evt, 'c1')" onmouseout="Onout(evt, 'c1')"><rect class="std" x="0" y="152" width="40" height="26"></rect></g>
+<g id="C-0_1" fill="#f0f0f0" onmouseup="SendJogcommand('C-0.1','Cfeedrate')" onmouseover="Onhover(evt, 'c01')" onmouseout="Onout(evt, 'c01')"><rect class="std" x="0" y="128" width="40" height="24"></rect></g>
+<g id="CSpace" fill="#000000" style="pointer-events:none;"><rect class="std" x="0" y="112" width="40" height="16"></rect></g>
+</g>
+
 </g></svg>
 
 
